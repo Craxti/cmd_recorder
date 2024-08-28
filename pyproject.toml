@@ -1,0 +1,28 @@
+[project]
+name = "cmd-recorder"
+version = "0.1.0"
+description = "A tool for recording terminal window output to GIF or MP4."
+authors = [
+    { name = "Your Name", email = "your.email@example.com" }
+]
+license = "MIT"
+readme = "README.md"
+requires-python = ">=3.7"
+
+[tool.poetry.dependencies]
+python = ">=3.9"
+pygetwindow = "^0.0.9"
+pyautogui = "^0.9.54"
+Pillow = "^10.4.0"
+moviepy = "^1.0.3"
+numpy = "^2.0.2"
+
+[tool.poetry.dev-dependencies]
+pytest = "^8.3.2"
+
+[tool.poetry.scripts]
+terminal-recorder = "main:main"
+
+[build-system]
+requires = ["poetry-core>=1.0.0"]
+build-backend = "poetry.core.masonry.api"
